@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './views/header/header.component';
+import { PosterComponent } from './views/poster/poster.component';
+import { SessaoPricipalComponent } from './views/sessao-pricipal/sessao-pricipal.component';
+import { FooterComponent } from './views/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    PosterComponent,
+    SessaoPricipalComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

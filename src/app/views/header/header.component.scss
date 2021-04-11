@@ -1,0 +1,32 @@
+@import '../../app.component.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid wheat;
+  background-color: $darkColor;
+  .logo {
+    display: flex;
+    height: 150px;
+    width: 300px;
+    justify-content: center;
+    transition: 0.5s ease;
+    border: none;
+    border-radius: 0px 0px 200px 200px;
+    box-shadow: 0px 0px 5px rgb(247, 247, 247);
+    background-color: $darkColor;
+    &:hover{
+      color: wheat;
+      box-shadow: 0px 2px 20px wheat;
+    }
+    h1 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 30px;
+      padding-right: 10px;
+      justify-self: center;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

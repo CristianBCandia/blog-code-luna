@@ -1,0 +1,57 @@
+@import '../../app.component.scss';
+
+section {
+  display: grid;
+  font-family: $font;
+  text-align: center;
+  gap: 25px;
+  margin: 25px 250px 20px 250px;
+  grid-template-areas: "title title title"
+                       "card1 card2 card3"
+                        "card4 card5 card6";
+
+  h2 {
+    color: black;
+    grid-area: title;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    min-height: 350px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 110px;
+    }
+    .corpo{
+      padding: 10px;
+    }
+    @include box-shadow();
+    &:hover {
+      box-shadow: 0px 10px 30px rgb(110, 106, 106);
+    }
+  }
+  .one{
+    grid-area: card1;
+  }
+  .two{
+    grid-area: card2;
+  }
+  .three{
+    grid-area: card3;
+  }
+  .four{
+    grid-area: card4;
+  }
+  .five{
+    grid-area: card5;
+  }
+  .fsix{
+    grid-area: card6;
+  }
+}
+
