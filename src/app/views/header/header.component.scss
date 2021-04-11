@@ -28,5 +28,12 @@
       text-align: center;
       cursor: pointer;
     }
+    @media (max-width: 700px){
+      background-color: transparent;
+      transition: 1s ease;
+    }
+  }
+  @media (max-width: 700px){
+    overflow: hidden;
   }
 }
