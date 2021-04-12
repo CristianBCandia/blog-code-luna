@@ -1,7 +1,6 @@
 @import '../../app.component.scss';
 
 footer {
-
   display: flex;
   font-family: $font;
   font-size: 25px;
@@ -11,6 +10,7 @@ footer {
   justify-content: space-evenly;
   color: wheat;
   background-color: $darkColor;
+  margin-top: 60px;
   .logo {
     opacity: 0.8;
   }
