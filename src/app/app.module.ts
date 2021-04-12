@@ -8,6 +8,7 @@ import { HeaderComponent } from './views/header/header.component';
 import { PosterComponent } from './views/poster/poster.component';
 import { SessaoPricipalComponent } from './views/sessao-pricipal/sessao-pricipal.component';
 import { FooterComponent } from './views/footer/footer.component';
+import { RegistrarPostagemComponent } from './views/registrar-postagem/registrar-postagem.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { FooterComponent } from './views/footer/footer.component';
     PosterComponent,
     SessaoPricipalComponent,
     FooterComponent,
-    MenuNoticiasComponent
+    MenuNoticiasComponent,
+    RegistrarPostagemComponent
   ],
   imports: [
     BrowserModule,
