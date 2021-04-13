@@ -1,27 +1,34 @@
-import { MenuNoticiasComponent } from './views/menu-noticias/menu-noticias.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './views/header/header.component';
-import { PosterComponent } from './views/poster/poster.component';
-import { SessaoPricipalComponent } from './views/sessao-pricipal/sessao-pricipal.component';
-import { FooterComponent } from './views/footer/footer.component';
-import { RegistrarPostagemComponent } from './views/registrar-postagem/registrar-postagem.component';
+import { HeaderComponent } from './components/header/header.component';
+import { PosterComponent } from './components/poster/poster.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { RegistrarPostagemComponent } from './components/post/registrar-postagem/registrar-postagem.component';
+import { MenuNoticiasComponent } from './components/menu-noticias/menu-noticias.component';
+import { SessaoPrincipalComponent } from './components/sessao-principal/sessao-principal.component';
+import { SucessoComponent } from './components/sucesso/sucesso.component';
+
 @NgModule({
-  declarations: [
+declarations: [
     AppComponent,
     HeaderComponent,
     PosterComponent,
-    SessaoPricipalComponent,
+    SessaoPrincipalComponent,
     FooterComponent,
     MenuNoticiasComponent,
-    RegistrarPostagemComponent
+    RegistrarPostagemComponent,
+    SucessoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

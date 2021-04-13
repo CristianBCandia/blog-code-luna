@@ -1,0 +1,30 @@
+@import '../../app.component.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: $font;
+  font-size: 20px;
+  display: flex;
+  background-color: aquamarine;
+  color: $darkColor;
+  height: 40px;
+  label{
+    display: flex;
+    align-items: center;
+    img{
+      width: 30px;
+      margin-right: 5px;
+    }
+  }
+  button {
+    margin-left: 10px;
+    border: none;
+    font-family: $font;
+    background-color: white;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+  }
+}

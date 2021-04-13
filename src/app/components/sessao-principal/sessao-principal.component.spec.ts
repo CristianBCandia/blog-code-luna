@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SessaoPricipalComponent } from './sessao-pricipal.component';
+import { SessaoPrincipalComponent } from './sessao-principal.component';
 
 describe('SessaoPricipalComponent', () => {
-  let component: SessaoPricipalComponent;
-  let fixture: ComponentFixture<SessaoPricipalComponent>;
+  let component: SessaoPrincipalComponent;
+  let fixture: ComponentFixture<SessaoPrincipalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SessaoPricipalComponent ]
+      declarations: [ SessaoPrincipalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SessaoPricipalComponent);
+    fixture = TestBed.createComponent(SessaoPrincipalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

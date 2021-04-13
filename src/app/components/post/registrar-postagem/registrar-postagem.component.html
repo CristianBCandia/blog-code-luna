@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Nova Postagem</h1>
+  <form>
+    Id
+    <input type="text" [(ngModel)]="post.id">
+    Título
+    <input type="text" [(ngModel)]="post.titulo" name= "titulo">
+    Texto
+    <textarea name="postagem" cols="30" rows="10"
+    [(ngModel)]="post.corpo" name="corpo"></textarea>
+    <button (click)="addPost()">Adicionar Postagem</button>
+  </form>
+</div>
