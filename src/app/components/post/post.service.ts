@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class PostService {
 
-  baseUrl = 'http://localhost:8080/posts'
+  baseUrl = 'http://localhost:8080'
 
   constructor(private http: HttpClient, private sessaoPrincipal: SessaoPrincipalService,
   private router: Router) { }
@@ -20,7 +20,22 @@ export class PostService {
     return this.http.post<Post>(this.baseUrl, post)
   }
 
+  deletePost(id: string): void {
+    this.http.delete<string>(`${this.baseUrl}/posts/${id}`).subscribe(() =>{
+      this.router.navigate([''])
+    })
+  }
+
+  salvarImg(img: FormData) {
+    this.http.post(`${this.baseUrl}/imagem`, img).subscribe(() => {
+      console.log("salvando")
+      return false
+    })
+    return false
+  }
+
   msgSucesso(): void {
     this.router.navigate(['sucesso'])
   }
+
 }

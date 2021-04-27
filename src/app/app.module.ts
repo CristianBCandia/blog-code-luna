@@ -12,6 +12,7 @@ import { RegistrarPostagemComponent } from './components/post/registrar-postagem
 import { MenuNoticiasComponent } from './components/menu-noticias/menu-noticias.component';
 import { SessaoPrincipalComponent } from './components/sessao-principal/sessao-principal.component';
 import { SucessoComponent } from './components/sucesso/sucesso.component';
+import { AngularFileUploaderModule } from "angular-file-uploader";
 
 @NgModule({
 declarations: [
@@ -28,7 +29,8 @@ declarations: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

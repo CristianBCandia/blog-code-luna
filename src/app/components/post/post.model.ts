@@ -1,5 +1,7 @@
 export interface Post {
-  id?: number
+  id?: string
   titulo: string
   corpo: string
+  capa: string
+  perfil: string
 }

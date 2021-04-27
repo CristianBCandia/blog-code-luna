@@ -1,13 +1,17 @@
 <div class="container">
   <h1>Nova Postagem</h1>
   <form>
-    Id
-    <input type="text" [(ngModel)]="post.id">
     Título
     <input type="text" [(ngModel)]="post.titulo" name= "titulo">
     Texto
     <textarea name="postagem" cols="30" rows="10"
     [(ngModel)]="post.corpo" name="corpo"></textarea>
+    <span>Foto capa postagem</span>
+    <img src="" alt="imagem de capa" id="imgCapa"/>
+    <input type="file" (change)="guardarImagemPerfil($event)" name="imagemPerfilPath">
+    <span>Foto perfil postagem</span>
+    <img src="" alt="imagem de perfil" id="imgPerfil"/>
+    <input type="file" [(ngModel)]="post.capa" name="capa">
     <button (click)="addPost()">Adicionar Postagem</button>
   </form>
 </div>

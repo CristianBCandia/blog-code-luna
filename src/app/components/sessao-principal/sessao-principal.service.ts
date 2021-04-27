@@ -2,14 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Post } from '../post/post.model';
-import { SessaoPrincipalComponent } from './sessao-principal.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SessaoPrincipalService {
 
-  baseUrl = 'http://localhost:3001/posts'
+  baseUrl = 'http://localhost:8080/posts'
 
   constructor(private http: HttpClient) { }
 
@@ -17,4 +16,7 @@ export class SessaoPrincipalService {
     return this.http.get<Post[]>(this.baseUrl)
   }
 
+/*   delete(id: string): void{
+    this.posterService.deletePost(id)
+  } */
 }

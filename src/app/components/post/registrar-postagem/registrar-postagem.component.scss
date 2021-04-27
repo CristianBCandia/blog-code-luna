@@ -3,23 +3,27 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   color: $darkColor;
   font-family: $font;
   font-size: 17px;
-  height: 55vh;
-  margin-top: 40px;
+  height: 600px;
+  margin-top: 20px;
   form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
+    height: 500px;
     width: 700px;
     input{
       padding: 5px;
       outline: 0;
       height: 30px;
+      margin-bottom: 10px;
+    }
+    img{
+      width: 80px;
+      height: 50px;
     }
     textarea {
       padding: 5px;
@@ -27,8 +31,7 @@
     }
     button{
       background-color: rgb(159, 245, 173);
-      margin-top: 10px;
-      height: 50px;
+      height: 40px;
       border: 1px solid #444;
       border-radius: 5px;
       color: black;

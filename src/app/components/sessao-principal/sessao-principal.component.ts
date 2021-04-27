@@ -21,4 +21,7 @@ export class SessaoPrincipalComponent implements OnInit {
     })
   }
 
+ /*  delete(id: string): void {
+    this.sessaoPrincipalService.delete(id)
+  } */
 }
